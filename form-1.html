@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Form-1</title>
+	<script type="javascript">
+		function pop1()
+		{
+			alert("Site Under Construction");
+		}
+	</script>
+</head>
+<body background="bg.jpg" style="background-size:cover;">
+	<!--Form-1-->
+	<form id="f1" action="" method="post">
+			<h3><i>Form Example</i></h3>
+		<fieldset>
+		<legend><h5>ENROLMENT FORM</h5></legend>
+		<table>
+		
+		<!--Personal Details-->
+		<tr><td colspan=2><small><a href="#f2">Already User?</a></td></tr>
+		<tr><td><small>New User?</td><td><small>Register Now!<td></tr>
+		<tr><td><label for="fname">First Name : </label></td>
+			<td><input type="text" id="fname" name="fname" placeholder="Ex: Scarlet" autofocus="" required/></td></tr>
+		<tr><td><label for="lname">Last Name  : </label></td>
+			<td><input type="text" id="lname" name="lname" placeholder="Ex: Johnson" required/></td></tr>
+		<tr><td><label for="cont">Contact  : </label></td>
+			<td><input type="number" id="cont" name="cont" required/></td></tr>
+		<tr><td><label for="add">Address  : </label></td>
+			<td><textarea name="add" id="add" cols=22 rows=3></textarea></td></tr>
+		<tr><td><label for="mail">E-mail ID : </label></td>
+			<td><input type="email" id="mail" name="mail" autocomplete=on multiple/></td></tr>
+		<tr><td><label for="pass">Password : </label></td>
+			<td><input type="password" name="pass" id="pass" required/></td></tr>
+		
+		<!--Radio Button-->	
+		<tr><td><label for="gen">Gender : </label></td>
+			<td><input type="radio" value="Male" id="gen" name="gen">
+					<label for="male">Male</label></td></tr>
+		<tr><td></td><td><input type="radio" value="Female" id="gen" name="gen"/>
+					<label for="female">Female</td></tr>
+		
+		<!--Checkbox-->
+		<tr><td><label for="check_1">Select Courses : </label><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<td><input type="checkbox" name="c" value="c" id="c" checked/>
+					<label for="c">C</label><br/>
+				<input type="checkbox" name="cpp" value="cpp" id="cpp" checked/>
+					<label for="cpp">C++</label><br/>
+				<input type="checkbox" name="java" id="java" value="java">
+					<label for="java">JAVA</label><br/>
+				<input type="checkbox" name=".net" id=".net" value=".net">
+					<label for=".net">.NET</label><br/>
+				<input type="checkbox" name="js" id="js" value="js">
+					<label for="js">JSP</label><br/>
+				<input type="checkbox" name="php" id="php" value="php">
+					<label for="php">PHP</label><br/>
+				<input type="checkbox" name="sql" id="sql" value="sql">
+					<label for="sql">SQL</label><br/>
+				<input type="checkbox" name="nsql" id="nsql" value="nsql">
+					<label for="nsql">NoSQL</label></td></tr>
+		
+		<!--More Details-->
+			<tr><td colspan=2><details>
+			<summary>
+				<i>Add Complementry Course</i>
+			</summary>
+		
+			<!--Datalist-->
+			<label for="course"><small>Enter Additional Course (It's FREE)</label>
+			<br/><input type="text" id="course" name="course" list="c_list">
+				<datalist id="c_list">
+					<option value="HTML">
+					<option value="CSS">
+					<option value="OS Troubleshooting">
+					<option value="Install/Deinstall">
+					<option value="OS Formating">
+					<option value="OS Installation">
+					<option value="Ubuntu Configuration">
+					<option value="Ubuntu Installation">
+					<option value="N/w Troubleshooting">
+					<option value="H/w Troubleshooting">
+					<option value="ShellScripting">
+					<option value="Visual Basics">
+					<option value="Windows Programming">
+					<option value="Testing Basics">
+					<option value="Hacking Basics">
+					<option value="Linux Administration L1">
+					<option value="Linux Server L1">
+				</datalist>
+		</details></td></tr>
+		
+		<!--BUTTONS-->
+		<tr><td><button type="submit">SUBMIT</button></td>
+			<td><button type="reset">RESET</button></td>
+		</tr>
+		</table>
+		</fieldset><br>
+		</form>
+		
+	<!--Form-2-->
+		<form id="f2" action="" methoth="post">
+		<fieldset>
+		<legend><h5>ALREADY A USER?</h5></legend>
+		<!--Log in Info-->
+		<table width=35%>
+		<tr><td><label for="user">User Nmae :</label></td>
+			<td><input type=text name="user" id="user" required></td></tr>
+		<tr><td><label for="pass">Password :</label></td>
+			<td><input type=password name="pass" id="pass" required></td></tr>
+		<tr><td><small><a href="#f1">New User?</a></td><td><small><a href="">Forget Password?</a></td></tr>
+		<!--Login Button-->
+		<tr><td></td>
+			<td><button type="submit">LOGIN</button></td>
+		</tr>
+		</table>
+		</fieldset>
+	</form>
+
+<footer>
+
+</footer>
+</body>
+</html>
